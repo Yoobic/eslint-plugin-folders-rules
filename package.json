@@ -1,15 +1,17 @@
 {
-  "name": "eslint-plugin-folders",
+  "name": "eslint-plugin-folders-rules",
   "version": "1.0.3",
   "description": "Eslint rule for consistent folder names.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "standard-version --release-as patch && git push --follow-tags origin master",
+    "release:major": "standard-version --release-as major && git push --follow-tags origin master",
+    "release:minor": "standard-version --release-as minor && git push --follow-tags origin master"
   },
   "peerDependencies": {
     "eslint": "*"
   },
-  "author": "Chris Banks <github@christopherbradleybanks.com>",
+  "author": "Avi Haiat <thaiat@yoobic.com>",
   "license": "MIT",
   "keywords": [
     "eslint",
@@ -21,6 +23,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/christopherbradleybanks/eslint-plugin-folders.git"
+    "url": "git://github.com/yoobic/eslint-plugin-folders-rules.git"
+  },
+  "devDependencies": {
+    "standard-version": "^9.3.2"
   }
 }

@@ -1,0 +1,3 @@
+{
+  "releaseCommitMessageFormat": "chore(release): Create version {{currentTag}}"
+}
